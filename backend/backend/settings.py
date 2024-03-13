@@ -42,7 +42,7 @@ INSTALLED_APPS = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000',  # React 应用的地址
+    'http://localhost:3000',  # React 应用的地址  # React 应用的地址
 ]
 
 REST_FRAMEWORK = {

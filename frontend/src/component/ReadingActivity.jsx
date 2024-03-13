@@ -1,9 +1,12 @@
-import React from 'react';
+import React,{useState} from 'react';
+import {useAuth} from "./context/AuthContext";
+import Navbar from "./Navbar";
 
 function ReadingActivity() {
     return (
         <div>
-            <h1>星夜享讀計畫</h1>
+            <Navbar/>
+            <h1 style={{marginTop:80}}>星夜享讀計畫</h1>
             <h2>活動依據</h2>
             <p>108年6月4日107學年度第2學期6月份臨時館務會議通過。</p>
 

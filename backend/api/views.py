@@ -4,27 +4,32 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.authtoken.models import Token
-from .serializers import UserSerializer
+from .serializers import UserRegistrationSerializer,LoginSerializer
 
 
-class RegisterView(APIView):
+class UserRegistrationView(APIView):
     def post(self, request):
-        serializer = UserSerializer(data=request.data)
+        serializer = UserRegistrationSerializer(data=request.data)
         if serializer.is_valid():
-            user = serializer.save()
-            user.set_password(user.password)
-            user.save()
-            token, created = Token.objects.get_or_create(user=user)
-            return Response({'token': token.key}, status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+            serializer.save()
+            token, created = Token.objects.get_or_create(user=serializer['username'])
+            return Response({'status': 'success', 'message': 'User successfully registered','token': token.key}, status=status.HTTP_201_CREATED)
+        else:
+            # return the errors message to frontend
+            # In fetch function get data.errors
+            return Response({
+                'status': 'error',
+                'message': 'Registration failed',
+                'errors': serializer.errors
+            }, status=status.HTTP_400_BAD_REQUEST)
 
 
 class LoginView(APIView):
     def post(self, request):
-        username = request.data.get('username')
-        password = request.data.get('password')
-        user = authenticate(username=username, password=password)
-        if user:
+        serializer = LoginSerializer(data=request.data)
+        if serializer.is_valid():
+            user = serializer.validated_data['user']  # 从validated_data中获取用户实例
             token, created = Token.objects.get_or_create(user=user)
-            return Response({'token': token.key}, status=status.HTTP_200_OK)
-        return Response({'error': 'Invalid Credentials'}, status=status.HTTP_400_BAD_REQUEST)
+            return Response({'token': token.key,'status':'success'}, status=status.HTTP_200_OK)
+        else:
+            return Response({'errors': serializer.errors}, status=status.HTTP_401_UNAUTHORIZED)

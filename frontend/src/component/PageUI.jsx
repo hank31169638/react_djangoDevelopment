@@ -1,6 +1,6 @@
 import '../css/index.css'
 
-function LoginPageContent() {
+function PageUI() {
     return (
 
         <div className='media'>
@@ -12,4 +12,4 @@ function LoginPageContent() {
     )
 }
 
-export default LoginPageContent;
+export default PageUI;
