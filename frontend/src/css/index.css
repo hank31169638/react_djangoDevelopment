@@ -1,7 +1,14 @@
-body {
+html {
+  overflow-y: scroll;
+}
+
+body{
     height: 100vh;
     margin: 0;
     padding: 0;
+    font-family: '新細明體', 'sans-serif';
+    background-color: rgb(240, 242, 245) !important;
+    color: rgba(0, 0, 0, 0.87);
 }
 
 #root {
@@ -25,8 +32,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 8vw;
-    font-family: '新細明體', 'sans-serif';
+    font-size: 8vw;;
     -webkit-text-stroke: 1px #fff;
     background: var(--bg);
     -webkit-background-clip: text;

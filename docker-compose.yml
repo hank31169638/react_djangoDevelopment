@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  django-backend:
+    build: ./backend  # Django Dockerfile 的路径
+    volumes:
+      - ./backend:/usr/src/app  # 映射 Django 项目到容器
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=1  # 设置环境变量，例如开启 Django 的调试模式
+
+  react-frontend:
+    build: ./frontend
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "3000:3000"
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+
+
+# nginx environment
+#  react-frontend:
+#    build: ./frontend  # React Dockerfile 的路径
+#    volumes:
+#      - ./frontend:/usr/src/app  # 映射 React 项目到容器
+#    ports:
+#      - "80:80"
+#    depends_on:
+#      - django-backend  # 确保 Django 后端在 React 前端之前启动
+#    environment:
+#      - CHOKIDAR_USEPOLLING=true

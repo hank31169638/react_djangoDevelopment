@@ -1,21 +1,24 @@
 import {Route, Routes, BrowserRouter as Router} from 'react-router-dom';
-import ReadingActivity from "./component/ReadingActivity";
-import LoginUI from "./component/LoginUI";
-import RegisterUI from "./component/RegisterUI";
+import InfoPage from "./component/Page/InfoPage";
+import LoginPage from "./component/Page/LoginPage";
+import RegisterPage from "./component/Page/RegisterPage";
+import RedirectPage from "./component/Page/RedirectPage";
+import HomePage from "./component/Page/HomePage/HomePage";
+
 import {AuthProvider} from "./component/context/AuthContext";
-import PrivateRouteInLoginStatus from "./component/context/PrivateRouteInLoginStatus";
-import PrivateRouteNotInLoginStatus from "./component/context/PrivateRouteNotInLoginStatus";
+import RequireAuthRoute from "./component/LoginStatus/RequireAuthRoute";
+import RedirectIfNotLoggedInRoute from "./component/LoginStatus/RedirectIfNotLoggedInRoute";
 
 function App() {
     return (
         <AuthProvider>
-        <Router>
+        <Router basename={"/"}>
             <Routes>
-
-                <Route element={<PrivateRouteNotInLoginStatus><ReadingActivity/></PrivateRouteNotInLoginStatus>} path=''></Route>
-                <Route element={<PrivateRouteInLoginStatus><LoginUI/></PrivateRouteInLoginStatus>} path='/login'></Route>
-                <Route element={<PrivateRouteInLoginStatus><RegisterUI/></PrivateRouteInLoginStatus>} path='/register'></Route>
-
+                <Route element={<RedirectIfNotLoggedInRoute><HomePage/></RedirectIfNotLoggedInRoute>} path='/'></Route>
+                <Route element={<RedirectIfNotLoggedInRoute><InfoPage/></RedirectIfNotLoggedInRoute>} path='/event'></Route>
+                <Route element={<RequireAuthRoute><LoginPage/></RequireAuthRoute>} path='/login'></Route>
+                <Route element={<RequireAuthRoute><RegisterPage/></RequireAuthRoute>} path='/register'></Route>
+                <Route element={<RedirectPage/>}  path='/redirect'></Route>
             </Routes>
         </Router>
             </AuthProvider>

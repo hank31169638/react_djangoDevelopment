@@ -12,13 +12,15 @@ import Grid from '@mui/material/Grid';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import {createTheme, ThemeProvider} from '@mui/material/styles';
-import PageUI from "./PageUI";
+import PageUI from "../UI/PageUI";
 import {useState} from "react";
-import {useAuth} from "./context/AuthContext";
+import {useAuth} from "../context/AuthContext";
 import IconButton from '@mui/material/IconButton';
 import InputAdornment from '@mui/material/InputAdornment';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
+import {useNavigate} from "react-router-dom";
+
 
 function Copyright(props) {
     return (
@@ -84,10 +86,11 @@ function PasswordField({errors}) {
 
 const defaultTheme = createTheme();
 
-export default function LoginUI() {
+export default function LoginPage() {
 
     const [errors, setErrors] = useState()
     const {login} = useAuth();
+    const Navigate = useNavigate();
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -95,7 +98,7 @@ export default function LoginUI() {
 
         setErrors({});
 
-        fetch('http://localhost:8000/api/login/', {
+        fetch(`${process.env.REACT_APP_API_BASE_URL}/api/login/`, {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -108,8 +111,9 @@ export default function LoginUI() {
                 if (d.status === 'success') {
                     alert('Login successful');
                     login(d.token);
+                    Navigate('/redirect')
                 } else {
-                    alert('Login failed');
+                    alert('Login failed');  
                     setErrors(d.errors);
                 }
             })

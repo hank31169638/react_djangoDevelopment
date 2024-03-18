@@ -2,8 +2,10 @@ from django.contrib.auth.models import User
 from rest_framework import serializers
 from django.contrib.auth import authenticate
 
+
 class UserRegistrationSerializer(serializers.ModelSerializer):
     password2 = serializers.CharField(style={'input_type': 'password'}, write_only=True)
+
     class Meta:
         model = User
         fields = ['username', 'email', 'password', 'password2']
@@ -44,13 +46,19 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
 class LoginSerializer(serializers.Serializer):
     username = serializers.CharField()
     password = serializers.CharField(write_only=True)
+
     def validate(self, data):
         username = data.get('username')
         password = data.get('password')
         user = authenticate(username=username, password=password)
         if not user:
-            raise serializers.ValidationError({"errors": "Invalid username or password.","status":"success"})
+            raise serializers.ValidationError({"errors": "Invalid username or password.", "status": "success"})
 
         # 认证成功，返回用户实例
         return {'user': user}
 
+
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ['id', 'username', 'email']

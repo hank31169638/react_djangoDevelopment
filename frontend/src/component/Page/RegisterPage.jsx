@@ -3,8 +3,6 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
 import Link from '@mui/material/Link';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
@@ -12,9 +10,8 @@ import Grid from '@mui/material/Grid';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import {createTheme, ThemeProvider} from '@mui/material/styles';
-import PageUI from "./PageUI";
-import {useAuth} from "./context/AuthContext";
-
+import PageUI from "../UI/PageUI";
+import {useAuth} from "../context/AuthContext";
 
 function Copyright(props) {
     return (
@@ -33,7 +30,7 @@ function Copyright(props) {
 // TODO remove, this demo shouldn't need to reset the theme.
 const defaultTheme = createTheme();
 
-export default function RegisterUI() {
+export default function RegisterPage() {
 
     const [errors, setErrors] = useState({})
     const { login } = useAuth();
@@ -55,7 +52,7 @@ export default function RegisterUI() {
         const data = new FormData(event.currentTarget);
 
         try {
-            fetch('http://localhost:8000/api/register/', {
+            fetch(`${process.env.REACT_APP_API_BASE_URL}/api/register/`, {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({
@@ -160,7 +157,7 @@ export default function RegisterUI() {
                                     </Link>
                                 </Grid>
                                 <Grid item>
-                                    <Link href="/" variant="body2">
+                                    <Link href="/login" variant="body2">
                                         {"已經有帳號 ? 前往登入"}
                                     </Link>
                                 </Grid>

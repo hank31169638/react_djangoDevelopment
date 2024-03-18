@@ -5,23 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="603d5e75-f299-44ec-81c4-8bf753050ab9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/component/Navbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/component/RegisterUI.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/component/context/AuthContext.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/component/context/PrivateRouteInLoginStatus.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/component/context/PrivateRouteNotInLoginStatus.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/custom-nginx.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/component/LoginStatus/RedirectIfNotLoggedInRoute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/component/Page/HomePage/HomePage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/component/Page/RedirectPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/component/UI/navbarUI/VerticalNavbarUI.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/backend/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/backend/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/environment.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/NationalTaiwanUniversityofScienceAndTechnology.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/images/NationalTaiwanUniversityofScienceAndTechnology.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/manifest.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/component/LoginPageContent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/PageUI.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/component/LoginUI.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/LoginUI.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/component/ReadingActivity.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/ReadingActivity.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/component/LoginUI.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/Page/LoginPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/component/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/UI/navbarUI/NavbarUI.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/component/PageUI.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/UI/PageUI.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/component/ReadingActivity.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/Page/InfoPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/component/RegisterUI.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/Page/RegisterPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/component/context/AuthContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/context/AuthContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/component/context/PrivateRouteInLoginStatus.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/LoginStatus/RequireAuthRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/component/context/PrivateRouteNotInLoginStatus.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/temp.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +57,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JSX File" />
         <option value="Python Script" />
+        <option value="JSX File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -46,6 +68,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/frontend/package.json" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
@@ -62,41 +87,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Node.js.LoginPage.jsx.executor": "Run",
-    "Python.Main.executor": "Run",
-    "Python.Test.executor": "Run",
-    "Python.add_BookData.executor": "Run",
-    "Python.handTracking.executor": "Run",
-    "Python.test.executor": "Run",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/hank3/OneDrive/DeskTop/Program Language/Python/Project/StudyPlan/frontend/src/component",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "CodeWithMe",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PyCharm 2023.3.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Node.js.LoginPage.jsx.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.add_BookData.executor&quot;: &quot;Run&quot;,
+    &quot;Python.handTracking.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/hank3/Downloads/material-dashboard-react-main&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Color Scheme Font&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\PyCharm 2023.3.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\hank3\OneDrive\DeskTop\Program Language\Python\Project\StudyPlan\frontend\src\component" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hank3\OneDrive\DeskTop\Program Language\Python\Project\StudyPlan\frontend\src\component\UI\navbarUI" />
+      <recent name="C:\Users\hank3\OneDrive\DeskTop\Program Language\Python\Project\StudyPlan\frontend\src\css" />
       <recent name="C:\Users\hank3\OneDrive\DeskTop\Program Language\Python\Project\StudyPlan\frontend\src\images" />
-      <recent name="C:\Users\hank3\OneDrive\DeskTop\Program Language\Python\Project\StudyPlan\frontend\src\component" />
-      <recent name="C:\Users\hank3\OneDrive\DeskTop\Program Language\Python\Project\StudyPlan\frontend\src\jsonfile" />
-      <recent name="C:\Users\hank3\OneDrive\DeskTop\Program Language\Python\Project\StudyPlan\frontend\src" />
-      <recent name="C:\Users\hank3\OneDrive\DeskTop\Program Language\Python\Project\StudyPlan\frontend\src\jsonFile" />
+      <recent name="C:\Users\hank3\OneDrive\DeskTop\Program Language\Python\Project\StudyPlan\frontend" />
+      <recent name="C:\Users\hank3\OneDrive\DeskTop\Program Language\Python\Project\StudyPlan\frontend\src\component\Page\HomePage" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -132,6 +157,14 @@
       <workItem from="1710223287638" duration="272000" />
       <workItem from="1710223681784" duration="8346000" />
       <workItem from="1710242296350" duration="25059000" />
+      <workItem from="1710391950707" duration="4818000" />
+      <workItem from="1710397691805" duration="1068000" />
+      <workItem from="1710415274245" duration="3960000" />
+      <workItem from="1710419978385" duration="41808000" />
+      <workItem from="1710696569314" duration="3479000" />
+      <workItem from="1710700119266" duration="710000" />
+      <workItem from="1710751010519" duration="229000" />
+      <workItem from="1710755519617" duration="2295000" />
     </task>
     <servers />
   </component>
@@ -140,6 +173,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/index_js$handTracking.coverage" NAME="handTracking Coverage Results" MODIFIED="1710314755469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../OpenCv" />
+    <SUITE FILE_PATH="coverage/package_json$Test.coverage" NAME="Test Coverage Results" MODIFIED="1710681108903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../.." />
     <SUITE FILE_PATH="coverage/manage_py$Main.coverage" NAME="Main Coverage Results" MODIFIED="1709641245677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬取暢銷書籍" />
     <SUITE FILE_PATH="coverage/package_lock_json$Test.coverage" NAME="Test Coverage Results" MODIFIED="1709795796229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../.." />
     <SUITE FILE_PATH="coverage/manage_py$Test.coverage" NAME="Test Coverage Results" MODIFIED="1709704226528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../.." />
